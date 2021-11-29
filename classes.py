@@ -25,8 +25,37 @@ class Books:
 
 
 class Shirts:
+    
+    #constructor
     def __init__(self, shirtID, color, price, inventory):
         self.itemID = shirtID
         self.color = color
         self.price = price
         self.inventory = inventory
+        
+    #destructor
+    def __del__(self):
+    print("Destroying the Shirts object")
+    
+    #getters
+    def getId(self):
+        return self.shirtID
+    def getColor(self):
+        return self.color
+    def getPrice(self):
+        return self.price
+    def getInventory(self):
+        return self.inventory
+    
+    #setters
+    def setId(self, shirtID):
+        self.shirtID = shirtID
+    def setColor(self, color):
+        self.color = color
+    def setPrice(self, price):
+        self.price = price
+    def setInventory(self, inventory):
+        self.inventory = inventory
+    
+    
+        
